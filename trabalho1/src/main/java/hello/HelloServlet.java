@@ -148,7 +148,7 @@ public class HelloServlet extends HttpServlet {
         if(nome.trim()==null)
             nome = "Fulano";
         
-        msg = lang+" "+msg+trt+nome+". "+horario+".<br><br>"+msg2;
+        msg = msg+trt+nome+". "+horario+".<br><br>"+msg2;
 
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
